@@ -12,3 +12,10 @@ steps:
    inputs:
     versionspec: "16.x"
     displayName: "Install Node.Js"
+
+ - task: NPM@1
+   inputs: 
+    commad : "install"
+    displayName: "NPM Installing"
+
+ 
