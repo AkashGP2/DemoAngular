@@ -9,6 +9,6 @@ workspace:
 
 steps:
  - task: NodeTool@0
-inputs:
+   inputs:
     versionspec: "16.x"
     displayName: "Install Node.Js"
