@@ -1,0 +1,14 @@
+trigger:
+  -dev
+
+pool:
+  vmImage: 'windows-latest'
+
+workspace:
+  clean: all
+
+steps:
+  -task: NodeTool@0
+  inputs:
+    versionspec: "16.x"
+    displayName: "Install Node.Js"
