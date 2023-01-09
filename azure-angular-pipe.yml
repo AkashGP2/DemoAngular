@@ -18,4 +18,21 @@ steps:
     commad : "install"
     displayName: "NPM Installing"
 
+ - task: NPM@1
+   inputs:
+    command: custom
+    customCommand: "run build"
+   displayName: "Building the App"
+
+ - task: NPM@1
+   inputs: 
+    command:
+    customCommand: "run test"
+   displayName: "Testing App"
+
+ - task: NPM@1
+   inputs: 
+    command:
+    customCommand: "run lint"
+   displayName: "Lint App"
  
